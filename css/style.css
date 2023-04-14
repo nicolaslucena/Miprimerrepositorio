@@ -1,27 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lilita+One&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@1,100&family=Smokum&family=Tilt+Prism&display=swap');
-
-
-
 *{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 box-sizing: border-box;
 margin: 0%;
-
 }
-
-body{
-    background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    color: rgb(237, 237, 241);
-   
-font-family: 'Lilita One', cursive;
-font-size: larger;
-
-}
-
 /*header*/
 header{
-    background-color:  #30040c 78%, #940439 100%;
- border: 1px solid rgba(211, 180, 180, 0.384);
- padding: 10px;
+    background-color:  #30040c 78%, #71062d 100%;
+    padding: 10px;
+    /*border:  solid rgba(211, 180, 180, 0.384);*/
 }
 .navegation{
     display: flex;
@@ -34,15 +20,11 @@ padding: 20px;
 .Ulist{
     display: flex;
 }
-li{
+.limenu{
      list-style: none;
      padding: 20px;   
 }
-
-
-
-
-li:hover{
+.limenu:hover{
     background-color: #940439;
     color: black;
     border: 1px solid black;
@@ -58,134 +40,98 @@ li:hover{
 }
 
 /*body*/
+body{
+    background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    color: rgb(28, 40, 211);
+}
 menu{
     padding: 20px;
 }
-section {
+.Galeria {
     background-image: linear-gradient(135deg, rgb(233, 224, 224) 0%, white 100%);
     color: black;
     margin: 5px;
     border-radius: 10px;
     border: 5px solid rgb(83, 79, 79);
     box-shadow: 5 px 5px 5px 5px;
-}
-.imgsec2{
     display: flex;
-    justify-content: center;
-    
 }
-.imgsec1{
+.containerContacto{
+    margin:auto;
+    width: 500px;
+    background-image: linear-gradient(135deg, rgb(233, 224, 224) 0%, white 100%);
+    color: black;
+    border-radius: 10px;
+    border: 5px solid rgb(83, 79, 79);
+    box-shadow: 5 px 5px 5px 5px;
+}
+
+.galleryimage{
+    width: 100%;
+}
+.galleryimage:hover{
+    filter:brightness(50%);
+    width:120%;
+}
+.tt{
+    margin-left:30%;
+}
+.contacto{
+    padding: 4%;
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    border-radius:10px;
 }
-.imgsecuno, .imgsecdos{
-    width: 20%;
-    padding: 5px;
-    margin: 30px;
-    border-style: groove;
-      
+textarea{
+    padding: 4%;
+    margin-top:3%;
 }
-.imgsectres, .imgseccuatro{
-    width: 20%;
-    padding: 5px;
-    margin: 10px;
-    border-style: groove;
+button{
+    margin-top:3%;
+    padding:2%;
 }
-.imgsecdos:hover{
-    width: 30%;
-    border: 1 px solid rgb(9, 10, 10);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+input{
+    margin-top:3%;
+    padding:3%;
 }
-.imgsecuno:hover{
-    width: 30%;
-    border: 1 px solid rgb(18, 18, 19);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-
-}
-.imgsectres:hover{
-    width: 30%;
-    border: 1 px solid rgb(18, 18, 19);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-
-}
-.imgseccuatro:hover{
-    width: 30%;
-    border: 1 px solid rgb(18, 18, 19);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-
-}
-
-
-
-
-.p1, .p2, .p3, .p4 {
+.p1, .p2 {
     background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     color: rgb(28, 40, 211);
     padding: 20px;
     margin: 10;
-    
-font-family: 'Playfair Display', serif;
-font-size: larger;
 }
-
-.t1, .t2, .t3, .t4{
-    padding: 5px;
-    margin: 1px;
-
+.t1, .t2{
+    padding: 20px;
+    margin: 10px;
 }
-
-
 /*footer*/
-
 footer{
+    margin-top: 20%;
     background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-
-padding: 20px;
-border-top: 2px solid white;
+    padding: 20px;
 }
-
 .containerfooter{
     border: 1px solid white;
     display: flex;
-
 }
-
-form{
-display: flex;
-flex-direction: column;
-background: #a5283f;
-padding: 20px;
-width: 50%;
-}
-
 input, textarea{
     padding: 10px;
     margin: 5 px;
 }
-
-.copy{
-    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
-color: black;
-padding: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-
+.lsocial{
+    display: flex;
+    justify-content: center;
 }
-
+.lisocial{
+    list-style: none;
+    align-items:center;
+    padding:20px;
+}
 .t3, .p3, .h4{
     padding: 20px;
 }
-
-.iconsocial{
-    display: flex;
-    justify-content: space-evenly;
+.copy{
+    display:flex;
+    justify-content: center;
+    padding: 20px;
 }
-
-
-
