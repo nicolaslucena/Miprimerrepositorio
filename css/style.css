@@ -1,28 +1,23 @@
 *{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-box-sizing: border-box;
-margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
 }
-/*header*/
+/*--------------------------------------------------------------header--------------------------------------------------------------*/
 header{
     background-color:  #30040c 78%, #71062d 100%;
     padding: 10px;
-    /*border:  solid rgba(211, 180, 180, 0.384);*/
 }
 .navegation{
     display: flex;
     justify-content: left;
 }
-.tprincipal{
-padding: 20px;
-}
-
 .Ulist{
     display: flex;
 }
 .limenu{
-     list-style: none;
-     padding: 20px;   
+    list-style: none;
+    padding: 20px;   
 }
 .limenu:hover{
     background-color: #940439;
@@ -31,15 +26,14 @@ padding: 20px;
     cursor:pointer ;
     transition: all 0.5s ease-out;
 }
-
 .iconP{
     width: 100px;
     margin-top: 1px;
+    margin-left: 20px;;
     border-radius: 15%;
     box-shadow: 2px 3px 5px 2px #30040c;
 }
-
-/*body*/
+/*--------------------------------------------------------------body--------------------------------------------------------------*/
 body{
     background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     color: rgb(28, 40, 211);
@@ -47,14 +41,21 @@ body{
 menu{
     padding: 20px;
 }
-.Galeria {
+.lgaleria{
+    display: flex;
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(4, 2fr);
+    padding: 4px;
+}
+.Galeria{
     background-image: linear-gradient(135deg, rgb(233, 224, 224) 0%, white 100%);
     color: black;
     margin: 5px;
     border-radius: 10px;
     border: 5px solid rgb(83, 79, 79);
-    box-shadow: 5 px 5px 5px 5px;
     display: flex;
+    overflow: hidden;
 }
 .containerContacto{
     margin:auto;
@@ -65,16 +66,13 @@ menu{
     border: 5px solid rgb(83, 79, 79);
     box-shadow: 5 px 5px 5px 5px;
 }
-
 .galleryimage{
     width: 100%;
+    margin:0%;
+    padding:0%;
 }
 .galleryimage:hover{
-    filter:brightness(50%);
-    width:120%;
-}
-.tt{
-    margin-left:30%;
+    transform: scale(1.3);
 }
 .contacto{
     padding: 4%;
@@ -94,17 +92,7 @@ input{
     margin-top:3%;
     padding:3%;
 }
-.p1, .p2 {
-    background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    color: rgb(28, 40, 211);
-    padding: 20px;
-    margin: 10;
-}
-.t1, .t2{
-    padding: 20px;
-    margin: 10px;
-}
-/*footer*/
+/*--------------------------------------------------------------footer--------------------------------------------------------------*/
 footer{
     margin-top: 20%;
     background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
@@ -113,10 +101,6 @@ footer{
 .containerfooter{
     border: 1px solid white;
     display: flex;
-}
-input, textarea{
-    padding: 10px;
-    margin: 5 px;
 }
 .lsocial{
     display: flex;
@@ -127,11 +111,30 @@ input, textarea{
     align-items:center;
     padding:20px;
 }
-.t3, .p3, .h4{
-    padding: 20px;
-}
 .copy{
     display:flex;
     justify-content: center;
     padding: 20px;
 }
+/*--------------------------------------------------------------------títulos y párrafos--------------------------------------------------------*/
+.p1 {
+    background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    color: rgb(28, 40, 211);
+    padding: 20px;
+    margin: 10;
+}
+.t1{
+    padding: 20px;
+    margin: 10px;
+}
+.h4{
+    padding: 20px;
+}
+.tt{/*para el formulario de contacto*/
+    margin-left:30%;
+}
+.maps{
+    display: flex;
+    
+}
+
