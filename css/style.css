@@ -22,7 +22,6 @@ header{
 .limenu:hover{
     background-color: #940439;
     color: black;
-    border: 1px solid black;
     cursor:pointer ;
     transition: all 0.5s ease-out;
 }
@@ -92,6 +91,17 @@ input{
     margin-top:3%;
     padding:3%;
 }
+.ubicacion{
+    color:black;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.ubi{
+    display: flex;
+    justify-content: space-evenly;
+}
 /*--------------------------------------------------------------footer--------------------------------------------------------------*/
 footer{
     margin-top: 20%;
@@ -117,24 +127,26 @@ footer{
     padding: 20px;
 }
 /*--------------------------------------------------------------------títulos y párrafos--------------------------------------------------------*/
-.p1 {
-    background-image: linear-gradient(to right, hsl(4, 100%, 73%) 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-    color: rgb(28, 40, 211);
-    padding: 20px;
-    margin: 10;
-}
 .t1{
     padding: 20px;
     margin: 10px;
+}
+.hh{
+    padding: 20px;
+    text-align: center;
 }
 .h4{
     padding: 20px;
 }
 .tt{/*para el formulario de contacto*/
-    margin-left:30%;
+    margin:170px;
 }
-.maps{
-    display: flex;
-    
+.p1{
+    padding: 20px;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color:black;
 }
 
